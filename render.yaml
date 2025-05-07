@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: trading-signal-bot
+    env: python
+    schedule: "@every 1h"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
